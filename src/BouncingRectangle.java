@@ -28,25 +28,25 @@ public class BouncingRectangle extends BouncingFigure {
 
 	//Methods to test of object hit each of four possible borders
 	public boolean rightBorderCollision(int screenLimit){
-		if(getXLeft()+this.width > screenLimit)
+		if(getXLeft()+this.width >= screenLimit)
 			return true;
 		return false;
 	}
 	
 	public boolean leftBorderCollision(){
-		if(getXLeft() < 0)
+		if(getXLeft() <= 0)
 			return true;
 		return false;
 	}
 
 	public boolean upperBorderCollision(){
-		if(getYTop() < 0)
+		if(getYTop() <= 0)
 			return true;
 		return false;
 	}
 
 	public boolean lowerBorderCollision(int screenLimit){
-		if(getYTop()+this.height > screenLimit)
+		if(getYTop()+this.height >= screenLimit)
 			return true;
 		return false;
 	}

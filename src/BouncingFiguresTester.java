@@ -28,6 +28,12 @@ public class BouncingFiguresTester {
         box.add(figure4);
         BouncingFigure figure5 = new BouncingRectangle(300, 610, 10, 10, 95, 250);
         box.add(figure5);
+        BouncingFigure figurec1 = new BouncingCircle(0,10,10,10,50,200);
+        box.add(figurec1);
+        BouncingFigure figurec2 = new BouncingCircle(300, 40, 15, 15, 270, 300);
+        box.add(figurec2);
+        BouncingFigure figurec3 = new BouncingCircle(600, 30, 7, 7, 235, 350);
+        box.add(figurec3);
        
         frame.add(box);
        

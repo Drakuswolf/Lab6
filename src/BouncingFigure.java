@@ -1,5 +1,4 @@
 import java.awt.Graphics;
-
 import javax.swing.JComponent;
 
 public abstract class BouncingFigure {
@@ -56,7 +55,7 @@ public abstract class BouncingFigure {
 
 	public void moveAtAngle(double angle,int pixelsPerSec){
 
-		// Divide speed by 10 because frame is repainted every 0.1 sec
+		// Divide speed by 10 because frame is repainted every 0.1 seconds
 		int magnitude = Math.max(pixelsPerSec / 10,1);
 
 		// Compute horizontal and vertical components of linear translation
